@@ -11,6 +11,7 @@ public class PoolTable : MonoBehaviour
     public Sprite squareSprite;  // Asigna el sprite cuadrado desde el Inspector
     public Sprite circleSprite;  // Asigna el sprite de círculo desde el Inspector
 
+    public List<GameObject> holes;
 
     void Start()
     {
@@ -72,6 +73,9 @@ public class PoolTable : MonoBehaviour
         holeSprite.transform.localScale = new Vector3(holeRadius * 2f, holeRadius * 2f, 1f);
 
         hole.transform.position = position;
+
+        //Guardo lista
+        holes.Add(hole);
     }
 
     void CreateTableHoles()
@@ -82,5 +86,15 @@ public class PoolTable : MonoBehaviour
         CreateHole("HoleBottomRight", new Vector2(tableWidth / 2f, -tableHeight / 2f));
         CreateHole("HoleMiddleTop", new Vector2(0f, tableHeight / 2f));
         CreateHole("HoleMiddleBottom", new Vector2(0f, -tableHeight / 2f));
+    }
+
+    public List<GameObject> GetHoles()
+    {
+        return holes;
+    }
+
+    public float GetHoleRadius()
+    {
+        return holeRadius;
     }
 }
