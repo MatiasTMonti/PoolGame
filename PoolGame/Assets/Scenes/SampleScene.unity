@@ -308,6 +308,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   poolTable: {fileID: 858574592}
   whiteBall: {fileID: 1128101342}
+  poolCue: {fileID: 1434162214}
 --- !u!1001 &1128101341
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -371,7 +372,10 @@ PrefabInstance:
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4039107162195823326, guid: 023875b55a8039546981a913175469fc, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1434162214}
   m_SourcePrefab: {fileID: 100100000, guid: 023875b55a8039546981a913175469fc, type: 3}
 --- !u!114 &1128101342 stripped
 MonoBehaviour:
@@ -384,6 +388,25 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8a9d80c2144f0894c928a6594c8b1f7b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!1 &1434162211 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4039107162195823326, guid: 023875b55a8039546981a913175469fc, type: 3}
+  m_PrefabInstance: {fileID: 1128101341}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1434162214
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1434162211}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: cc535a6cda6edd54ea7b8ed05bb3f994, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  rotationSpeed: 5
+  cueLength: 2
 --- !u!1660057539 &9223372036854775807
 SceneRoots:
   m_ObjectHideFlags: 0
